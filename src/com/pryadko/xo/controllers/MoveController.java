@@ -11,7 +11,8 @@ public class MoveController {
 
     public void applyFigure (final Field field,
                             final Point point,
-                            final Figure figure) throws InvalidPointException, PointAlreadyOccupiedException {
+                            final Figure figure) throws InvalidPointException,
+                                                        PointAlreadyOccupiedException {
         if (field.getFigure(point) != null) {
             throw new PointAlreadyOccupiedException();
         }
