@@ -47,8 +47,6 @@ public class CurrentMoveControllerTest {
         for (int i = 0; i < 3; i += 1) {
             for (int x = 0; x < 3; x += 1) {
                 field.setFigure(new Point(x, i), Figure.X);
-                field.setFigure(new Point(x, i), Figure.O);
-                field.setFigure(new Point(x, i), Figure.X);
             }
         }
         assertNull(currentMoveController.currentMove(field));
